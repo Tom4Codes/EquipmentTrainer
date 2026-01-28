@@ -4,7 +4,7 @@ const vehicles = {
   glf1: {
     name: "GLF 1",
     views: {
-      front: { image: "images/glf1_front.jpg", 
+      front: { image: "glf1_front.jpg", 
 		  zones: [
 		    { id: "MR", left: 2, top: 55, width: 12, height: 30 },
 			{ id: "FR2", left: 15, top: 55, width: 12, height: 30 },
@@ -12,25 +12,25 @@ const vehicles = {
 			{ id: "FR4", left: 41, top: 55, width: 12, height: 30 }
 		  ] 
 	  },
-      left:  { image: "images/glf1_left.jpg",
+      left:  { image: "glf1_left.jpg",
 		  zones: [
 		    { id: "G6", left: 3, top: 55, width: 12, height: 30 },
 			{ id: "G2", left: 15, top: 55, width: 12, height: 30 }
 		  ] 
 	  },
-      right: { image: "images/glf1_right.jpg",
+      right: { image: "glf1_right.jpg",
 		  zones: [
 		    { id: "G6", left: 3, top: 55, width: 12, height: 30 },
 			{ id: "G2", left: 15, top: 55, width: 12, height: 30 }
 		  ] 
 	  },
-      rear:  { image: "images/glf1_rear.jpg",
+      rear:  { image: "glf1_rear.jpg",
 		  zones: [
 		    { id: "G1", left: 3, top: 55, width: 12, height: 30 },
 			{ id: "G2", left: 3, top: 55, width: 12, height: 30 }
 		  ] 
 	  },
-      top:   { image: "images/glf1_top.jpg",
+      top:   { image: "glf1_top.jpg",
 		  zones: [
 		    { id: "DB1", left: 3, top: 55, width: 12, height: 30 },
 			{ id: "DB2", left: 15, top: 55, width: 12, height: 30 }
@@ -201,3 +201,4 @@ function exportPDF() {
 
 initVehicles();
 setMode("learn");
+
