@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>GLF Gerätekunde</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json"> 
+</head> 
+
+<body>
+
+<header>
+<h1>Header Test</h1>
+</header>
+
+<h1>GLF – Gerätekunde</h1>
+
+<!-- Fahrzeugwahl -->
+<select id="vehicleSelect"></select>
+
+<div class="controls">
+	<button onclick="setMode('learn')">Lernmodus</button>
+	<button onclick="setMode('exam')">Prüfungsmodus</button>
+	<button onclick="toggleLabels()">Beschriftung</button>
+	<button onclick="toggleInstructor()">Ausbilder</button>
+</div>
+
+<div class="views">
+    <button onclick="setView('front')">Front</button>
+    <button onclick="setView('left')">Links</button>
+    <button onclick="setView('right')">Rechts</button>
+    <button onclick="setView('rear')">Heck</button>
+    <button onclick="setView('top')">Draufsicht</button>
+</div>
+
+<h2 id="question"></h2>
+<p id="timer"></p>
+
+<div class="image-container">
+    <img id="vehicleImage">
+</div>
+
+<p id="feedback"></p>
+<p id="result"></p>
+
+<button onclick="exportPDF()">PDF exportieren</button>
+<footer>
+<h1>"Footer"</h1>
+</footer)
+<script src="libs/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+</body>
+</html>

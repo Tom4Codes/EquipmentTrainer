@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.controls button {
+    background-color: #4CAF50; /* Green */ 
+	border: none;
+	color: white; 
+	padding: 15px 32px; 
+	text-align: center; 
+	text-decoration: none; 
+	display: inline-block; 
+	font-size: 16px; 
+	margin: 4px 2px; 
+	cursor: pointer; 
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.zone {
+    position: absolute;
+    cursor: pointer;
+}
+
+.zone:hover {
+    outline: 3px dashed yellow;
+}
+
+.correct {
+    background: rgba(0, 200, 0, 0.4);
+}
+
+.wrong {
+    background: rgba(200, 0, 0, 0.4);
+}
+
+.label {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+    pointer-events: none;
+}
+
